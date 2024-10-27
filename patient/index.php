@@ -1,12 +1,16 @@
+<?php
+// base URL for the S3 bucket
+include_once '../static_resource.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/animations.css">  
-    <link rel="stylesheet" href="../css/main.css">  
-    <link rel="stylesheet" href="../css/admin.css">
+    <link rel="stylesheet" href="<?php echo $static_url; ?>/css/animations.css">  
+    <link rel="stylesheet" href="<?php echo $static_url; ?>/css/main.css">  
+    <link rel="stylesheet" href="<?php echo $static_url; ?>/css/admin.css">
         
     <title>Dashboard</title>
     <style>
@@ -68,7 +72,7 @@
                         <table border="0" class="profile-container">
                             <tr>
                                 <td width="30%" style="padding-left:20px" >
-                                    <img src="../img/user.png" alt="" width="100%" style="border-radius:50%">
+                                    <img src="<?php echo $static_url; ?>/img/user.png" alt="" width="100%" style="border-radius:50%">
                                 </td>
                                 <td style="padding:0px;margin:0px;">
                                     <p class="profile-title"><?php echo substr($username,0,13)  ?>..</p>
@@ -146,7 +150,7 @@
                                 </p>
                             </td>
                             <td width="10%">
-                                <button  class="btn-label"  style="display: flex;justify-content: center;align-items: center;"><img src="../img/calendar.svg" width="100%"></button>
+                                <button  class="btn-label"  style="display: flex;justify-content: center;align-items: center;"><img src="<?php echo $static_url; ?>/img/calendar.svg" width="100%"></button>
                             </td>
         
         
@@ -335,7 +339,7 @@
                                                     <td colspan="4">
                                                     <br><br><br><br>
                                                     <center>
-                                                    <img src="../img/notfound.svg" width="25%">
+                                                    <img src="<?php echo $static_url; ?>/img/notfound.svg" width="25%">
                                                     
                                                     <br>
                                                     <p class="heading-main12" style="margin-left: 45px;font-size:20px;color:rgb(49, 49, 49)">Nothing to show here!</p>
