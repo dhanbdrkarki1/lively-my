@@ -5,7 +5,7 @@
 // $database = 'livelymydb';
 
 // Amazon RDS
-$host = 'livelymy.czgaq2ekg3ad.us-east-1.rds.amazonaws.com';
+$host = 'livelymy-instance.czgaq2ekg3ad.us-east-1.rds.amazonaws.com';
 $username = 'admin';
 $password = 'Password0123';
 $database = 'livelymy';
