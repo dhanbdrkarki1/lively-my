@@ -132,7 +132,7 @@ include_once '../static_resource.php';
                                 </p>
                                 <p class="heading-sub12" style="padding: 0;margin: 0;">
                                     <?php 
-                                date_default_timezone_set('Asia/Kathmandu');
+                                date_default_timezone_set('Asia/Kolkata');
         
                                 $today = date('Y-m-d');
                                 echo $today;
