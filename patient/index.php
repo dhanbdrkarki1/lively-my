@@ -329,6 +329,15 @@ include_once '../static_resource.php';
                                         <tbody>
                                         
                                             <?php
+                                            // Ensure $userid is set and not empty
+                                            if (!isset($userid) || empty($userid)) {
+                                                
+                                                error_log("Error: User ID is not set or is empty.", 0); // Log to Apache error log
+                                                error_log("Info: User ID is $userid.", 0); // Log to Apache error log
+
+                                                exit; // Stop execution if $userid is essential
+                                            }
+
                                             $nextweek=date("Y-m-d",strtotime("+1 week"));
                                                 $sqlmain= "select * from schedule inner join appointment on schedule.scheduleid=appointment.scheduleid inner join patient on patient.pid=appointment.pid inner join doctor on schedule.docid=doctor.docid  where  patient.pid=$userid  and schedule.scheduledate>='$today' order by schedule.scheduledate asc";
                                                 //echo $sqlmain;
