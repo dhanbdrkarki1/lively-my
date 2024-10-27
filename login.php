@@ -1,3 +1,8 @@
+<?php
+session_start();
+// base URL for the S3 bucket
+include_once 'static_resource.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
