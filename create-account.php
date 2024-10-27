@@ -1,12 +1,16 @@
+<?php
+// base URL for the S3 bucket
+include_once 'static_resource.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/animations.css">  
-    <link rel="stylesheet" href="css/main.css">  
-    <link rel="stylesheet" href="css/signup.css">
+    <link rel="stylesheet" href="<?php echo $static_url; ?>/css/animations.css">  
+    <link rel="stylesheet" href="<?php echo $static_url; ?>/css/main.css">  
+    <link rel="stylesheet" href="<?php echo $static_url; ?>/css/signup.css">
         
     <title>Create Account</title>
     <style>
