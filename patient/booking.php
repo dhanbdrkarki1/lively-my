@@ -23,7 +23,7 @@ $userfetch = $result->fetch_assoc();
 $userid = $userfetch["pid"];
 $username = $userfetch["pname"];
 
-date_default_timezone_set('Asia/Kolkata');
+date_default_timezone_set('Asia/Kathmandu');
 $today = date('Y-m-d');
 ?>
 

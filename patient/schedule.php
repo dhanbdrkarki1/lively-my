@@ -57,7 +57,7 @@ include_once '../static_resource.php';
     //echo $userid;
     //echo $username;
     
-    date_default_timezone_set('Asia/Kolkata');
+    date_default_timezone_set('Asia/Kathmandu');
 
     $today = date('Y-m-d');
 
