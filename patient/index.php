@@ -10,8 +10,7 @@ include_once '../static_resource.php';
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="<?php echo $static_url; ?>/css/animations.css">  
     <link rel="stylesheet" href="<?php echo $static_url; ?>/css/main.css">  
-    <link rel="stylesheet" href="<?php echo $static_url; ?>/css/admin.css">
-        
+    <link rel="stylesheet" href="<?php echo $static_url; ?>/css/admin.css">   
     <title>Dashboard</title>
     <style>
         .dashbord-tables{
@@ -58,11 +57,6 @@ include_once '../static_resource.php';
 
     $userid= $userfetch["pid"];
     $username=$userfetch["pname"];
-
-    echo "hello i'm patient\n";
-    echo $userid;
-    echo $username;
-    
     ?>
     <div class="container">
         <div class="menu">
@@ -331,13 +325,9 @@ include_once '../static_resource.php';
                                             <?php
                                             // Ensure $userid is set and not empty
                                             if (!isset($userid) || empty($userid)) {
-                                                
-                                                error_log("Error: User ID is not set or is empty.", 0); // Log to Apache error log
-                                                error_log("Info: User ID is $userid.", 0); // Log to Apache error log
-
+                                                error_log("Error: User ID is not set or is empty. If you are using ALB, enable session stickiness.", 0); // Log to Apache error log
                                                 exit; // Stop execution if $userid is essential
                                             }
-
                                             $nextweek=date("Y-m-d",strtotime("+1 week"));
                                                 $sqlmain= "select * from schedule inner join appointment on schedule.scheduleid=appointment.scheduleid inner join patient on patient.pid=appointment.pid inner join doctor on schedule.docid=doctor.docid  where  patient.pid=$userid  and schedule.scheduledate>='$today' order by schedule.scheduledate asc";
                                                 //echo $sqlmain;
