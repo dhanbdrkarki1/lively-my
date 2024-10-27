@@ -1,3 +1,9 @@
+<?php
+session_start();
+// base URL for the S3 bucket
+include_once 'static_resource.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,7 +14,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
     <!-- <link rel="stylesheet" href="css/animations.css">  
     <link rel="stylesheet" href="css/main.css">   -->
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="<?php echo $static_url; ?>/css/index.css">
     <title>Lively My</title>
     <style>
         table {
@@ -20,7 +26,7 @@
 
 <body>
     <section id="banner">
-        <img src="img/logo.png" class="logo">
+        <img src="<?php echo $static_url; ?>/img/logo.png" class="logo">
         <div class="banner-text ">
             <h1> LIVELY - MY </h1>
             <p>Live a healthy and happy life.</p>
@@ -44,7 +50,7 @@
         </nav>
     </div>
     <div id="menuBtn">
-        <img src="img/menu.png" alt="menu">
+        <img src="<?php echo $static_url; ?>/img/menu.png" alt="menu">
     </div>
 
     <!-- About Us -->
@@ -91,7 +97,7 @@
                 </div>
             </div>
             <div class="about-img">
-                <img src="img/i1.jpg" alt="medical image">
+                <img src="<?php echo $static_url; ?>/img/i1.jpg" alt="medical image">
             </div>
         </div>
     </section>
@@ -104,7 +110,7 @@
         </div>
         <div class="event-box">
             <div class="single-event">
-                <img src="img/i2.jpg" alt="Vaccination Campaign">
+                <img src="<?php echo $static_url; ?>/img/i2.jpg" alt="Vaccination Campaign">
                 <div class="overlay"></div>
                 <div class="event-desc">
                     <h3>Vaccination Program</h3>
@@ -118,7 +124,7 @@
                 </div>
             </div>
             <div class="single-event">
-                <img src="img/i3.png" alt="TB Awareness program">
+                <img src="<?php echo $static_url; ?>/img/i3.png" alt="TB Awareness program">
                 <div class="overlay"></div>
                 <div class="event-desc">
                     <h3>TB Awareness program</h3>
@@ -131,7 +137,7 @@
                 </div>
             </div>
             <div class="single-event">
-                <img src="img/i4.jpg" alt="Traffic Awareness">
+                <img src="<?php echo $static_url; ?>/img/i4.jpg" alt="Traffic Awareness">
                 <div class="overlay"></div>
                 <div class="event-desc">
                     <h3>Traffic Awareness Program</h3>
@@ -144,7 +150,7 @@
                 </div>
             </div>
             <div class="single-event">
-                <img src="img/i6.png" alt="Road Accident Campaign">
+                <img src="<?php echo $static_url; ?>/img/i6.png" alt="Road Accident Campaign">
                 <div class="overlay"></div>
                 <div class="event-desc">
                     <h3>Road Accident Campaign</h3>
@@ -168,7 +174,7 @@
         <div class="card">
             <div class="doctor-container">
                 <div class="box">
-                    <img src="img/doctor1.jpg" alt="doctor">
+                    <img src="<?php echo $static_url; ?>/img/doctor1.jpg" alt="doctor">
                     <div class="content">
                         <a href="#">
                             <h2>Fazel Aslam</h2>
@@ -184,7 +190,7 @@
                     </div>
                 </div>
                 <div class="box">
-                    <img src="img/doctor2.jpg" alt="doctor">
+                    <img src="<?php echo $static_url; ?>/img/doctor2.jpg" alt="doctor">
                     <div class="content">
                         <a href="#">
                             <h2>Raftaar Singh</h2>
@@ -200,7 +206,7 @@
                     </div>
                 </div>
                 <div class="box">
-                    <img src="img/doctor3.jpg" alt="doctor">
+                    <img src="<?php echo $static_url; ?>/img/doctor3.jpg" alt="doctor">
                     <div class="content">
                         <a href="#">
                             <h2>Sarita Tiwari</h2>
@@ -227,7 +233,7 @@
         <div class="testimonial-row">
             <div class="testimonial-col">
                 <div class="user">
-                    <img src="img/noor.jpg" alt="User">
+                    <img src="<?php echo $static_url; ?>/img/noor.jpg" alt="User">
                     <div class="user-info">
                         <h4> Noor Ahmad <i class="fa fa-twitter"></i></h4>
                         <small>@ahmed_noor</small>
@@ -239,7 +245,7 @@
             </div>
             <div class="testimonial-col">
                 <div class="user">
-                    <img src="img/sej.jpg" alt="User">
+                    <img src="<?php echo $static_url; ?>/img/sej.jpg" alt="User">
                     <div class="user-info">
                         <h4> Sejraj Malik <i class="fa fa-twitter"></i></h4>
                         <small>@maliksejraj</small>
@@ -251,7 +257,7 @@
             </div>
             <div class="testimonial-col">
                 <div class="user">
-                    <img src="img/jyotir.jpg" alt="User">
+                    <img src="<?php echo $static_url; ?>/img/jyotir.jpg" alt="User">
                     <div class="user-info">
                         <h4> Dr. Jotyir Khan <i class="fa fa-twitter"></i></h4>
                         <small>@drkhan</small>
@@ -266,7 +272,7 @@
     </section>
     <!-- footer -->
     <section id="footer">
-        <img src="img/logo.png" class="footer-img" alt="">
+        <img src="<?php echo $static_url; ?>/img/logo.png" class="footer-img" alt="">
         <div class="title-text">
             <p>CONTACT</p>
             <h1>GET IN TOUCH</h1>
