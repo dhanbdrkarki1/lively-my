@@ -8,7 +8,7 @@
 $host = 'livelymy.czgaq2ekg3ad.us-east-1.rds.amazonaws.com';
 $username = 'admin';
 $password = 'Password0123';
-$database = 'livelymydb';
+$database = 'livelymy';
 
 // Create connection
 $database = new mysqli($host, $username, $password, $database);
