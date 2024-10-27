@@ -1,7 +1,8 @@
 <?php
 
     session_start();
-
+    // base URL for the S3 bucket
+    include_once '../static_resource.php';
     if(isset($_SESSION["user"])){
         if(($_SESSION["user"])=="" or $_SESSION['usertype']!='a'){
             header("location: ../login.php");
