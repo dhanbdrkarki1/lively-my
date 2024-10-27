@@ -1,12 +1,13 @@
 <?php
-// $host = 'rdsh2c.ch00u6ugi9yx.us-east-1.rds.amazonaws.com';
-// $username = 'admin';
-// $password = 'admin123';
-// $database = 'rdsh2c';
+// $host = 'localhost';
+// $username = 'root';
+// $password = '';
+// $database = 'livelymydb';
 
-$host = 'localhost';
-$username = 'root';
-$password = '';
+// Amazon RDS
+$host = 'livelymy.czgaq2ekg3ad.us-east-1.rds.amazonaws.com';
+$username = 'admin';
+$password = 'Password0123';
 $database = 'livelymydb';
 
 // Create connection
