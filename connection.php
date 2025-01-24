@@ -6,10 +6,10 @@
 // $database = 'livelymydb';
 
 // Amazon RDS
-$host = 'livelymy-instance.czgaq2ekg3ad.us-east-1.rds.amazonaws.com';
+$host = 'database-1.cvg8yyg0it3z.us-east-2.rds.amazonaws.com';
 $username = 'admin';
-$password = 'Password0123';
-$database = 'livelymy';
+$password = 'adminadmin';
+$database = 'dhandb';
 
 // Create connection
 $database = new mysqli($host, $username, $password, $database);
